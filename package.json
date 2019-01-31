@@ -1,6 +1,6 @@
 {
-  "name": "Frame",
-  "version": "1.0.0",
+  "name": "framecss",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
   "license": "MIT"
