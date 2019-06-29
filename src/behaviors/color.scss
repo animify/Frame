@@ -1,0 +1,15 @@
+@each $name, $color in $colors {
+    .#{$name} {
+        &\@text {
+            color: #{$color};
+        }
+
+        &\@bg {
+            background-color: #{$color};
+        }
+
+        &\@border {
+            border-color: #{$color};
+        }
+    }
+}
