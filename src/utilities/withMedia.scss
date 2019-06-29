@@ -6,7 +6,7 @@
 
 @each $type, $break in $breakpoints {
     @include above($type) {
-        @include withMedia($type);
+        @include withMedia(\@ + $type);
     }
 }
 

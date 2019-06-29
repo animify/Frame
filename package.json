@@ -4,7 +4,7 @@
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel watch src/index.scss -d public --no-hmr"
+    "start": "parcel watch src/index.scss -d dist --no-hmr"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
