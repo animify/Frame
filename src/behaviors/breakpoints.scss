@@ -1,0 +1,48 @@
+@function bp-min($name) {
+    $min: map-get($breakpoints, $name);
+    @return if($min !=0, $min, null);
+}
+
+@function bp-max($name) {
+    $next: bp-next($name);
+    @return if($next, bp-min($next) - .02, null);
+}
+
+@function bp-next($name, $names: map-keys($breakpoints)) {
+    $name: index($names, $name);
+    @return if($name !=null and $name < length($names), nth($names, $name + 1), null);
+}
+
+
+
+@mixin above($name) {
+    $min: bp-min($name);
+
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin below($name) {
+    $max: bp-max($name);
+
+    @if $max {
+        @media (max-width: $max) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin applyBreakpoints() {
+    @each $type, $break in $breakpoints {
+        @include above($type) {
+            @content;
+        }
+    }
+}

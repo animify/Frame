@@ -1,0 +1,13 @@
+@mixin withMedia() {
+    @include spacing();
+}
+
+@include withMedia();
+
+@each $type, $break in $breakpoints {
+    @include above($type) {
+        @include withMedia();
+    }
+}
+
+

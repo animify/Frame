@@ -1,7 +1,17 @@
 {
   "name": "framecss",
   "version": "1.0.1",
-  "main": "index.js",
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel watch src/index.scss -d public --no-hmr"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "parcel": "^1.12.3",
+    "postcss-cli": "^6.1.2",
+    "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.22.1"
+  }
 }

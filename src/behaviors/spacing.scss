@@ -1,0 +1,43 @@
+@mixin spacing($breakpointSize: null) {
+    @for $size from 0 through 12 {
+        $breakpoint: null !default;
+        $spacing: $size * 4px;
+        $negativeSpacing: -$size;
+
+        @if $breakpoint {
+            $breakpoint: '\@' + $breakpoint
+        }
+
+        @each $type in 'p', 'm' {
+            .#{$type}#{$size}#{$breakpoint} {
+                padding: $spacing;
+            }
+
+            .#{$type}t#{$size}#{$breakpoint} {
+                padding-top: $spacing;
+            }
+
+            .#{$type}b#{$size}#{$breakpoint} {
+                padding-bottom: $spacing;
+            }
+
+            .#{$type}r#{$size}#{$breakpoint} {
+                padding-right: $spacing;
+            }
+
+            .#{$type}l#{$size}#{$breakpoint} {
+                padding-left: $spacing;
+            }
+
+            .#{$type}v#{$size}#{$breakpoint} {
+                padding-top: $spacing;
+                padding-bottom: $spacing;
+            }
+
+            .#{$type}h#{$size}#{$breakpoint} {
+                padding-right: $spacing;
+                padding-left: $spacing;
+            }
+        }
+    }
+}
