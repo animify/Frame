@@ -1,11 +1,12 @@
 @mixin spacing($breakpointSize: null) {
+    $breakpoint: null;
+
     @for $size from 0 through 12 {
-        $breakpoint: null !default;
         $spacing: $size * 4px;
         $negativeSpacing: -$size;
 
-        @if $breakpoint {
-            $breakpoint: '\@' + $breakpoint
+        @if $breakpointSize {
+            $breakpoint: \@ + $breakpointSize;
         }
 
         @each $type in 'p', 'm' {
