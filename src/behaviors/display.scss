@@ -1,0 +1,29 @@
+@mixin display($breakpoint: null) {
+    .df#{$breakpoint} {
+        display: flex;
+    }
+
+    .dif#{$breakpoint} {
+        display: inline-flex;
+    }
+
+    .db#{$breakpoint} {
+        display: block;
+    }
+
+    .dib#{$breakpoint} {
+        display: inline-block;
+    }
+
+    .dn#{$breakpoint}, .hidden#{$breakpoint} {
+        display: none;
+    }
+
+    .dt#{$breakpoint} {
+        display: table;
+    }
+
+    .dtc#{$breakpoint} {
+        display: table-cell;
+    }
+}

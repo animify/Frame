@@ -1,8 +1,8 @@
 @mixin withMedia($type: null) {
     @include spacing($type);
     @include position($type);
-    @include opacity($type);
     @include radius($type);
+    @include display($type);
 }
 
 @include withMedia();
