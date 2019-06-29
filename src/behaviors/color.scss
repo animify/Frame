@@ -12,4 +12,18 @@
             border-color: #{$color};
         }
     }
+
+    .h-#{$name} {
+        &\@text:hover {
+            color: #{$color};
+        }
+
+        &\@bg:hover {
+            background-color: #{$color};
+        }
+
+        &\@border:hover {
+            border-color: #{$color};
+        }
+    }
 }
