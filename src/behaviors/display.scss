@@ -1,29 +1,38 @@
 @mixin display($breakpoint: null) {
-    .df#{$breakpoint} {
+    .grid#{$breakpoint} {
+        display: grid;
+        grid-template-columns: repeat($gridColumns, 1fr);
+    }
+
+    .flex#{$breakpoint} {
         display: flex;
     }
 
-    .dif#{$breakpoint} {
+    .iflex#{$breakpoint} {
         display: inline-flex;
     }
 
-    .db#{$breakpoint} {
+    .block#{$breakpoint} {
         display: block;
     }
 
-    .dib#{$breakpoint} {
+    .iblock#{$breakpoint} {
         display: inline-block;
     }
 
-    .dn#{$breakpoint}, .hidden#{$breakpoint} {
+    .none#{$breakpoint}, .hidden#{$breakpoint} {
         display: none;
     }
 
-    .dt#{$breakpoint} {
+    .table#{$breakpoint} {
         display: table;
     }
 
-    .dtc#{$breakpoint} {
+    .ctable#{$breakpoint} {
         display: table-cell;
+    }
+
+    .rtable#{$breakpoint} {
+        display: table-row;
     }
 }

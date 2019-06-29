@@ -1,0 +1,7 @@
+@mixin grid($breakpoint: null) {
+    @for $size from 1 through $gridColumns {
+        .col#{$size}#{$breakpoint} {
+            grid-column: span $size;
+        }
+    }
+}

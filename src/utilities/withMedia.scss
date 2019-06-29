@@ -3,6 +3,7 @@
     @include position($type);
     @include radius($type);
     @include display($type);
+    @include grid($type);
 }
 
 @include withMedia();
