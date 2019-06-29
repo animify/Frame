@@ -1,0 +1,7 @@
+@mixin position($breakpoint: null) {
+    @each $position in static, relative, absolute, fixed, sticky {
+        .#{$position}#{$breakpoint} {
+            position: $position;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 @mixin withMedia($type: null) {
     @include spacing($type);
+    @include position($type);
 }
 
 @include withMedia();
