@@ -1,0 +1,37 @@
+@mixin radius($breakpoint: null) {
+    @for $size from 0 through 4 {
+        $radius: $size * 4px;
+
+        .r#{$size}#{$breakpoint} {
+            border-radius: $radius;
+        }
+
+        .rt#{$size}#{$breakpoint} {
+            border-top-left-radius: $radius;
+            border-top-right-radius: $radius;
+        }
+
+        .rb#{$size}#{$breakpoint} {
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
+        
+        .rr#{$size}#{$breakpoint} {
+            border-top-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
+
+        .rl#{$size}#{$breakpoint} {
+            border-top-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+        }
+    }
+
+    .r50#{$breakpoint} {
+        border-radius: 50%;
+    }
+
+    .r100#{$breakpoint} {
+        border-radius: 100%;
+    }
+}

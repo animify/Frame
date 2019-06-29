@@ -2,6 +2,7 @@
     @include spacing($type);
     @include position($type);
     @include opacity($type);
+    @include radius($type);
 }
 
 @include withMedia();
