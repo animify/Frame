@@ -4,6 +4,7 @@
     @include radius($type);
     @include display($type);
     @include grid($type);
+    @include width($type);
 }
 
 @include withMedia();
