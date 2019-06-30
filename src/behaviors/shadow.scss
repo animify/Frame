@@ -1,0 +1,7 @@
+@mixin shadow($breakpoint: null) {
+    @each $name, $value in $shadows {
+        .s#{$name}#{$breakpoint} {
+            box-shadow: $value;
+        }
+    }
+}

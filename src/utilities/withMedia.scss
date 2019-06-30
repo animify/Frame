@@ -5,6 +5,7 @@
     @include display($type);
     @include grid($type);
     @include width($type);
+    @include shadow($type);
 }
 
 @include withMedia();
