@@ -5,6 +5,7 @@
     @include display($type);
     @include grid($type);
     @include width($type);
+    @include height($type);
     @include shadow($type);
     @include maxWidth($type);
     @include flexbox($type);
