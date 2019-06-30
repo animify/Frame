@@ -1,0 +1,13 @@
+@mixin position($breakpoint: null) {
+    .strike#{$breakpoint} { 
+        text-decoration: line-through;
+    }
+
+    .underline#{$breakpoint} { 
+        text-decoration: underline;
+    }
+
+    .undecorated#{$breakpoint} { 
+        text-decoration: none;
+    }
+}
