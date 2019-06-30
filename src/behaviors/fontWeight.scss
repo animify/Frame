@@ -1,0 +1,5 @@
+@each $name, $value in $fontWeight {
+    .#{unquote('fw-#{$name}')} {
+        font-weight: $value;
+    }
+}
