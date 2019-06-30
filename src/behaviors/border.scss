@@ -1,0 +1,29 @@
+@mixin border($breakpoint: null) {
+    .bn#{$breakpoint} {
+        border: none;
+    }
+
+    .ba#{$breakpoint} {
+        border: 1px solid;
+    }
+
+    .bt#{$breakpoint} {
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+
+    .bb#{$breakpoint} {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    .br#{$breakpoint} {
+        border-right-style: solid;
+        border-right-width: 1px;
+    }
+
+    .bl#{$breakpoint} {
+        border-left-style: solid;
+        border-left-width: 1px;
+    }
+}

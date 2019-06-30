@@ -9,6 +9,7 @@
     @include maxWidth($type);
     @include flexbox($type);
     @include float($type);
+    @include border($type);
 }
 
 @include withMedia();
