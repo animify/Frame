@@ -1,0 +1,17 @@
+@mixin position($breakpoint: null) {
+    .ttn#{$breakpoint} { 
+        text-transform: none; 
+    }
+
+    .ttc#{$breakpoint} { 
+        text-transform: capitalize; 
+    }
+
+    .ttl#{$breakpoint} { 
+        text-transform: lowercase; 
+    }
+
+    .ttu#{$breakpoint} { 
+        text-transform: uppercase; 
+    }
+}
