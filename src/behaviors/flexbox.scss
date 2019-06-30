@@ -1,0 +1,96 @@
+@function flexProp($type) {
+    @if ($type == start) {
+        @return flex-start;
+    }
+
+    @if ($type == end) {
+        @return flex-end;
+    }
+
+    @return $type;
+}
+
+@mixin flexbox($breakpoint: null) {
+    .flex {
+        @each $type in column, row, column-reverse, row-reverse, stretch {
+            &-#{$type}#{$breakpoint} {
+                flex-direction: flexProp($type);
+            }
+        }
+
+        @each $type in wrap, nowrap, wrap-reverse {
+            &-#{$type}#{$breakpoint} {
+                flex-wrap: flexProp($type);
+            }
+        }
+    }
+
+    .items {
+        @each $type in start, end, center, baseline, stretch {
+            &-#{$type}#{$breakpoint} {
+                align-items: flexProp($type);
+            }
+        }
+    }
+
+
+    .align {
+        @each $type in start, end, center, baseline, between, around, stretch {
+            &-#{$type}#{$breakpoint} {
+                align-content: flexProp($type);
+            }
+        }
+    }
+
+    .align-self {
+        @each $type in start, end, center, baseline, stretch {
+            &-#{$type}#{$breakpoint} {
+                align-self: flexProp($type);
+            }
+        }
+    }
+
+    .justify {
+        @each $type in start, end, center, baseline, between, around, evenly {
+            &-#{$type}#{$breakpoint} {
+                justify-content: flexProp($type);
+            }
+        }
+    }
+
+    .justify-self {
+        @each $type in start, end, center, baseline  {
+            &-#{$type}#{$breakpoint} {
+                justify-self: flexProp($type);
+            }
+        }
+    }
+
+    .flex-grow#{$breakpoint} {
+        flex-grow: 1;
+    }
+
+    .flex-nogrow#{$breakpoint} {
+        flex-grow: 0;
+    }
+
+    .flex-shrink#{$breakpoint} {
+        flex-shrink: 1;
+    }
+
+    .flex-noshrink#{$breakpoint} {
+        flex-shrink: 0;
+    }
+
+    .order {
+        @for $order from 0 through 9 {
+            &-#{$order}#{$breakpoint} {
+                order: $order;
+            }
+        }
+
+        &-last#{$breakpoint} {
+            order: 9999;
+        }
+    }
+}

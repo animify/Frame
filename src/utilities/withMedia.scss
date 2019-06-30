@@ -7,6 +7,7 @@
     @include width($type);
     @include shadow($type);
     @include maxWidth($type);
+    @include flexbox($type);
 }
 
 @include withMedia();

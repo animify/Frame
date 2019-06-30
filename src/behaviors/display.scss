@@ -8,7 +8,7 @@
         display: flex;
     }
 
-    .iflex#{$breakpoint} {
+    .inline-flex#{$breakpoint} {
         display: inline-flex;
     }
 
@@ -16,7 +16,7 @@
         display: block;
     }
 
-    .iblock#{$breakpoint} {
+    .inline-block#{$breakpoint} {
         display: inline-block;
     }
 
@@ -28,11 +28,11 @@
         display: table;
     }
 
-    .ctable#{$breakpoint} {
+    .table-cell#{$breakpoint} {
         display: table-cell;
     }
 
-    .rtable#{$breakpoint} {
+    .table-row#{$breakpoint} {
         display: table-row;
     }
 }
