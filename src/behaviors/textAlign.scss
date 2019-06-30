@@ -1,0 +1,17 @@
+@mixin position($breakpoint: null) {
+    .taj#{$breakpoint} { 
+        text-align: justify; 
+    }
+
+    .tac#{$breakpoint} { 
+        text-align: center; 
+    }
+
+    .tar#{$breakpoint} { 
+        text-align: right; 
+    }
+
+    .tal#{$breakpoint} { 
+        text-align: left; 
+    }
+}
