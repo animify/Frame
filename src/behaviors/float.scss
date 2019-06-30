@@ -1,0 +1,7 @@
+@mixin float($breakpoint: null) {
+    @each $float in left, right, none {
+        .float-#{$float}#{$breakpoint} {
+            float: $float;
+        }
+    }
+}

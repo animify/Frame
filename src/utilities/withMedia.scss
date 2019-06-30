@@ -8,6 +8,7 @@
     @include shadow($type);
     @include maxWidth($type);
     @include flexbox($type);
+    @include float($type);
 }
 
 @include withMedia();
