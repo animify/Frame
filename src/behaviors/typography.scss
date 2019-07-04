@@ -1,7 +1,9 @@
 @each $name, $value in $fontSize {
-    #{$name}, .#{$name} {
+    #{$name},
+    .#{$name} {
         font-size: $value;
         line-height: map-get($lineHeight, $name);
+        margin: 0;
 
         @if str-slice($name, 0, 1) == h {
             font-weight: map-get($fontWeight, semibold);
@@ -9,6 +11,7 @@
     }
 }
 
-strong, .strong {
+strong,
+.strong {
     font-weight: map-get($fontWeight, bold);
 }
