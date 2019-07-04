@@ -1,3 +1,11 @@
+## [Version 1.1.1](https://github.com/animify/Frame/releases/tag/v1.1.1) (2019-7-4)
+
+### Bug fixes
+
+- margin 0 to headers, add editorconfig: [`88566b8`](https://github.com/animify/Frame/commit/88566b8)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.0...v1.1.1)
+
 ## [Version 1.1.0](https://github.com/animify/Frame/releases/tag/v1.1.0) (2019-7-4)
 
 ### New features
