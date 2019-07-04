@@ -4,10 +4,12 @@
   "author": "Stefan Mansson <stefan.aotik@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel watch src/index.scss -d dist --no-hmr"
+    "start": "parcel watch src/index.scss -d dist --no-hmr",
+    "package": "changelog && git push --follow-tags && yarn publish --access public --non-interactive"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
+    "changelog.md": "^1.1.0",
     "parcel": "^1.12.3",
     "postcss-cli": "^6.1.2",
     "postcss-loader": "^3.0.0",
