@@ -1,3 +1,11 @@
+## [Version 1.1.3](https://github.com/animify/Frame/releases/tag/v1.1.3) (2019-7-4)
+
+### Bug fixes
+
+- default shadow variable: [`b111be7`](https://github.com/animify/Frame/commit/b111be7)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.2...v1.1.3)
+
 ## [Version 1.1.2](https://github.com/animify/Frame/releases/tag/v1.1.2) (2019-7-4)
 
 ### Bug fixes
