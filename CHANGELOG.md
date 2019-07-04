@@ -1,3 +1,11 @@
+## [Version 1.1.4](https://github.com/animify/Frame/releases/tag/v1.1.4) (2019-7-4)
+
+### Bug fixes
+
+- flexbox fixes: [`85fd5ed`](https://github.com/animify/Frame/commit/85fd5ed)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.3...v1.1.4)
+
 ## [Version 1.1.3](https://github.com/animify/Frame/releases/tag/v1.1.3) (2019-7-4)
 
 ### Bug fixes
