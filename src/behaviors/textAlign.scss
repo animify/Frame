@@ -1,4 +1,4 @@
-@mixin position($breakpoint: null) {
+@mixin textAlign($breakpoint: null) {
     .taj#{$breakpoint} { 
         text-align: justify; 
     }
