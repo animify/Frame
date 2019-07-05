@@ -1,3 +1,11 @@
+## [Version 1.1.5](https://github.com/animify/Frame/releases/tag/v1.1.5) (2019-7-5)
+
+### Bug fixes
+
+- textAlgin not included: [`6bdd162`](https://github.com/animify/Frame/commit/6bdd162)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.4...v1.1.5)
+
 ## [Version 1.1.4](https://github.com/animify/Frame/releases/tag/v1.1.4) (2019-7-4)
 
 ### Bug fixes
