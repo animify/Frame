@@ -1,3 +1,11 @@
+## [Version 1.1.6](https://github.com/animify/Frame/releases/tag/v1.1.6) (2019-7-5)
+
+### Bug fixes
+
+- fix position and text classes: [`05c7530`](https://github.com/animify/Frame/commit/05c7530)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.5...v1.1.6)
+
 ## [Version 1.1.5](https://github.com/animify/Frame/releases/tag/v1.1.5) (2019-7-5)
 
 ### Bug fixes
