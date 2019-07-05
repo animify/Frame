@@ -12,6 +12,8 @@
     @include float($type);
     @include border($type);
     @include textAlign($type);
+    @include textDecoration($type);
+    @include textTransform($type);
 }
 
 @include withMedia();

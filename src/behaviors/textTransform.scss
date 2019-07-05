@@ -1,4 +1,4 @@
-@mixin position($breakpoint: null) {
+@mixin textTransform($breakpoint: null) {
     .ttn#{$breakpoint} { 
         text-transform: none; 
     }

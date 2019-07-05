@@ -1,4 +1,4 @@
-@mixin position($breakpoint: null) {
+@mixin textDecoration($breakpoint: null) {
     .strike#{$breakpoint} { 
         text-decoration: line-through;
     }
