@@ -4,34 +4,36 @@
         $negativeSpacing: -$size;
 
         @each $type in 'p', 'm' {
+            $prop: if($type == 'm', 'margin', 'padding');
+
             .#{$type}#{$size}#{$breakpoint} {
-                padding: $spacing;
+                #{$prop}: $spacing;
             }
 
             .#{$type}t#{$size}#{$breakpoint} {
-                padding-top: $spacing;
+                #{$prop}-top: $spacing;
             }
 
             .#{$type}b#{$size}#{$breakpoint} {
-                padding-bottom: $spacing;
+                #{$prop}-bottom: $spacing;
             }
 
             .#{$type}r#{$size}#{$breakpoint} {
-                padding-right: $spacing;
+                #{$prop}-right: $spacing;
             }
 
             .#{$type}l#{$size}#{$breakpoint} {
-                padding-left: $spacing;
+                #{$prop}-left: $spacing;
             }
 
             .#{$type}v#{$size}#{$breakpoint} {
-                padding-top: $spacing;
-                padding-bottom: $spacing;
+                #{$prop}-top: $spacing;
+                #{$prop}-bottom: $spacing;
             }
 
             .#{$type}h#{$size}#{$breakpoint} {
-                padding-right: $spacing;
-                padding-left: $spacing;
+                #{$prop}-right: $spacing;
+                #{$prop}-left: $spacing;
             }
         }
     }
