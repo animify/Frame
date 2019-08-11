@@ -1,3 +1,11 @@
+## [Version 1.1.7](https://github.com/animify/Frame/releases/tag/v1.1.7) (2019-8-11)
+
+### Bug fixes
+
+- fix spacing for margins: [`0154f56`](https://github.com/animify/Frame/commit/0154f56)
+
+[...full changes](https://github.com/animify/Frame/compare/v1.1.6...v1.1.7)
+
 ## [Version 1.1.6](https://github.com/animify/Frame/releases/tag/v1.1.6) (2019-7-5)
 
 ### Bug fixes
