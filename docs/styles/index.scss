@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import '../../src/index.scss';
+@import './link.scss';
+@import './layout.scss';
+@import './navigation.scss';
+@import './example.scss';
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    font-family: "Inter";
+}
+
+#root {
+    height: 100%;
+}
