@@ -36,13 +36,15 @@ export default function Snippet({ title, description, children, highlightKeyword
                 <div className="preview">{children}</div>
                 <div className="code">
                     <div className="header flex items-center justify-between">
-                        <small>HTML</small>
+                        <small className="fw-bold" style={{ letterSpacing: 0.8 }}>
+                            HTML
+                        </small>
 
-                        <Icon name="copy" width={16} height={16} />
+                        <span className="flex">
+                            <Icon name="copy" width={16} height={16} />
+                            <small className="fw-medium ml1">Copy</small>
+                        </span>
                     </div>
-                    {/* <SyntaxHighlighter language="html" style={codeStyle} showLineNumbers={true}>
-                        {codeString}
-                    </SyntaxHighlighter> */}
 
                     <pre>
                         <code dangerouslySetInnerHTML={{ __html: codeString }}></code>

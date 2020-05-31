@@ -33,4 +33,5 @@ export enum VariableType {
 
 export interface NavigationItem {
     displayName: string;
+    page: () => JSX.Element;
 }
