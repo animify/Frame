@@ -22,7 +22,7 @@ export default function Snippet({ title, description, children, highlightKeyword
         const codeString = rehype().stringify({ type: 'root', children: highlightedMarkup }).toString();
 
         return highlightKeywords.reduce(
-            (str, key) => str.replace(key, `<span class="highlight">${key}</span>`),
+            (str, key) => str.replace(new RegExp(key, 'gi'), `<span class="highlight">${key}</span>`),
             codeString,
         );
     }, [children, highlightKeywords]);

@@ -8,17 +8,17 @@
         flex-direction: column;
         max-width: 100%;
         overflow: hidden;
-        border: 1px solid #e5e5e5;
+        border: 1px solid #dfe4e8;
         border-radius: 12px;
 
         .code {
             color: #acb7bf;
-            background-color: #1D252C;
-            border: 1px solid #2a353e;
+            background-color: #f1f4f7;
+            border-top: 1px solid #dfe4e8;
 
             > .header {
                 padding: 16px 20px;
-                background-color: #2a353e;
+                background-color: #f1f4f7;
             }
 
             pre {

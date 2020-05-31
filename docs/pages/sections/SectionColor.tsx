@@ -1,5 +1,8 @@
 import React from 'react';
 import Snippet from '../../components/Snippet';
+import { red100 } from '../../exports/color.scss';
+
+console.log('colors', red100);
 
 export default function SectionColor() {
     return (

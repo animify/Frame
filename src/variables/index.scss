@@ -5,3 +5,29 @@
 @import 'fontSize';
 @import 'fontWeight';
 @import 'lineHeight';
+
+:root {
+    @each $key, $value in $colors {
+        #{$value}: #{map-get($varsColors, $key)};
+    }
+
+//     @each $key, $value in $breakpoints {
+//         --breakpoint-#{$key}: #{$value};
+//     }
+
+//     @each $key, $value in $shadows {
+//         --shadow-#{$key}: #{$value};
+//     }
+
+//     @each $key, $value in $fontSize {
+//         --font-size-#{$key}: #{$value};
+//     }
+
+//     @each $key, $value in $fontWeight {
+//         --font-weight-#{$key}: #{$value};
+//     }
+
+//     @each $key, $value in $lineHeight {
+//         --line-height-#{$key}: #{$value};
+//     }
+}

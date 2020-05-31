@@ -1,4 +1,4 @@
-$colors: (
+$varsColors: (
     black100: #000000,
     white100: #ffffff,
     green100: #00ff00,
@@ -6,3 +6,19 @@ $colors: (
     blue100: #0000ff,
     yellow100: #ffff00
 ) !default;
+
+@function createVarMap($map, $prefix) {
+    $varMap: ();
+
+    @each $key, $value in $map {
+        $varMap: map-merge($varMap, (#{$key}: --#{$prefix}-#{$key}));
+    }
+
+    @return $varMap;
+}
+
+$colors: createVarMap($varsColors, 'color');
+
+@function color($color) {
+    @return unquote('var(' + map-get($colors, $color) + ')')
+}
