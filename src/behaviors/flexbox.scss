@@ -20,7 +20,7 @@
 
 @mixin flexbox($breakpoint: null) {
     .flex {
-        @each $type in column, row, column-reverse, row-reverse, stretch {
+        @each $type in column, row, column-reverse, row-reverse {
             &-#{$type}#{$breakpoint} {
                 flex-direction: flexProp($type);
             }
